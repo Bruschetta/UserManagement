@@ -11,7 +11,7 @@
         <hr>
         <s:actionerror/>
         <s:form action="login">
-            <s:textfield name="user.username" label="Nome"/>
+            <s:textfield name="user.username" label="Username"/>
             <s:password name="user.password" label="Password"/>
             <s:submit value="Login"/>
         </s:form>
