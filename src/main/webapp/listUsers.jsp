@@ -11,9 +11,9 @@
         <hr>
         <s:actionerror/>
         <s:form action="search" method="post">
-            <s:textfield name="user.username" label="Username"/>
-            <s:textfield name="user.email" label="Email"/>
-            <s:submit value="Ricerca Utenti" align="center" style="margin-left:27px"/>
+            <s:textfield name="user.username" label="Username" />
+            <s:textfield name="user.email" label="Email" />
+            <s:submit value="Ricerca Utenti" align="center" style="margin-left:27px"/>     
         </s:form>
         <hr>
         <s:actionerror/>
