@@ -14,7 +14,6 @@
             <s:textfield name="user.username" label="Username"/>
             <s:textfield name="user.email" label="Email"/>
             <s:submit value="Ricerca Utenti" align="center" style="margin-left:27px"/>
-            <s:submit value="Clear" action="myClearAction"/>
         </s:form>
         <hr>
         <s:actionerror/>
