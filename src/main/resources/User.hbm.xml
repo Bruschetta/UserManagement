@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 1-feb-2016 17.26.42 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="mapping.User" table="user" catalog="usermanadb" optimistic-lock="version">
+      <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="username" type="string">
+            <column name="username" length="45" not-null="true" />
+        </property>
+        <property name="password" type="string">
+            <column name="password" length="45" not-null="true" />
+        </property>
+         <property name="email" type="string">
+            <column name="email" length="45" not-null="true" />
+        </property>
+        <property name="nome" type="string">
+            <column name="nome" length="45" />
+        </property>
+        <property name="cognome" type="string">
+            <column name="cognome" length="45" />
+        </property>
+        <property name="datacreazione" type="timestamp">
+            <column name="datacreazione" length="19" />
+        </property>
+         <property name="datamodifica" type="timestamp">
+            <column name="datamodifica" length="19" />
+        </property>
+    </class>
+</hibernate-mapping>

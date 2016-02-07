@@ -1,0 +1,39 @@
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+    <constant name="struts.enable.DynamicMethodInvocation" value="false" />
+    <constant name="struts.devMode" value="false" />
+    <constant name="struts.mapper.alwaysSelectFullNamespace" value="false" />
+    
+    <package name="default" extends="struts-default" namespace="/">
+        <action name="login" class="actions.LoginAction">
+            <result name="success">hello.jsp</result>
+            <result name="error">loginUsers.jsp</result>
+        </action>
+        <action name="add" class="actions.InsertAction">
+            <result name="success" >insertUsers.jsp</result>
+            <result name="error" >insertUsers.jsp</result>
+            <result name="input" >insertUsers.jsp</result>
+        </action>
+        
+         <action name="edit" class="actions.InsertAction" method="update">
+            <result name="success" >editUser.jsp</result>
+            <result name="error" >editUser.jsp</result>
+            <result name="input" >editUser.jsp</result>
+        </action>
+            
+        <action name="search" class="actions.ListAction">
+            <result name="success" >listUsers.jsp</result>
+            <result name="error" >listUsers.jsp</result>
+        </action>   
+        <action name="findUser" class="actions.ListAction" method="findUserById">
+            <result name="success" >editUser.jsp</result>
+        </action>
+        
+        <action name="deleteUser" class="actions.DeleteAction" >
+            <result name="success" type="chain">search</result>
+        </action>
+    </package>
+</struts>
