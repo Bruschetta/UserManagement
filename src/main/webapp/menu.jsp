@@ -7,7 +7,7 @@
          <title>User Management</title>
     </head>
     <body>
-        <hr>
+     
         <h1>Menu Gestione Utenti</h1>
         <hr>
         <ul>
