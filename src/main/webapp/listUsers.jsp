@@ -11,8 +11,8 @@
         <hr>
         <s:actionerror/>
         <s:form action="search" method="post">
-            <s:textfield name="user.username" label="Username" />
-            <s:textfield name="user.email" label="Email" />
+            <s:textfield name="user.username" maxlength="44" label="Username" />
+            <s:textfield name="user.email" maxlength="59" label="Email" />
             <s:submit value="Ricerca Utenti" align="center" style="margin-left:27px"/>     
         </s:form>
         <hr>

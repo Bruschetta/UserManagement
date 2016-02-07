@@ -16,9 +16,9 @@
             <s:hidden name="user.username" value="%{user.username}" /> 
             <s:hidden name="user.email" value="%{user.email}" /> 
             <s:hidden name="user.datacreazione" value="%{user.datacreazione}" /> 
-            <s:textfield name="user.nome" value="%{user.nome}" label="Nome"/>
-            <s:textfield name="user.cognome" value="%{user.cognome}" label="Cognome"/>
-            <s:password name="user.password" value="%{user.password}" label="Password"/>
+            <s:textfield name="user.nome" maxlength="44" value="%{user.nome}" label="Nome"/>
+            <s:textfield name="user.cognome" maxlength="44" value="%{user.cognome}" label="Cognome"/>
+            <s:password name="user.password" maxlength="44" value="%{user.password}" label="Password"/>
             <s:submit style="margin-left:35px" value="Modifica utente" align="center"/>
         </s:form>     
         <s:if test="hasActionMessages()">

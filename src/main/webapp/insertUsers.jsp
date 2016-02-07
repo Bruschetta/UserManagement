@@ -13,11 +13,11 @@
         <s:actionerror />
         <s:form action="add" method="post">
             <s:hidden name="id" value="%{user.id}"/>
-            <s:textfield name="user.nome" value="%{user.nome}" label="Nome"/>
-            <s:textfield name="user.cognome" value="%{user.cognome}" label="Cognome"/>
-            <s:textfield name="user.username" value="%{user.username}" label="Username"/>
-            <s:password name="user.password" value="%{user.password}" label="Password"/>
-            <s:textfield name="user.email" value="%{user.email}" label="Email"/>
+            <s:textfield name="user.nome" maxlength="44" value="%{user.nome}" label="Nome"/>
+            <s:textfield name="user.cognome" maxlength="44" value="%{user.cognome}" label="Cognome"/>
+            <s:textfield name="user.username" maxlength="44" value="%{user.username}" label="Username"/>
+            <s:password name="user.password" maxlength="44" value="%{user.password}" label="Password"/>
+            <s:textfield name="user.email" maxlength="59" value="%{user.email}" label="Email"/>
             <s:submit style="margin-left:35px" value="Inserisci utente" align="center"/>
         </s:form>
         <s:if test="hasActionMessages()">
