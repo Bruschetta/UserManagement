@@ -29,6 +29,7 @@
                     <th>Data Modifica</th>
                     <th>Edit</th>
                     <th>Delete</th>
+                    <th>Insert</th>
                 </tr>
                 <s:iterator value="userList" status="stat">  
                     <tr >
@@ -50,6 +51,9 @@
                                 <s:param name="id" value="%{id}"></s:param>
                             </s:url>
                             <s:a href="%{deleteURL}">Delete</s:a>
+                            </td>
+                            <td>
+                                <a href="insertUsers.jsp">Insert new</a>
                             </td>
                         </tr>
                 </s:iterator>
