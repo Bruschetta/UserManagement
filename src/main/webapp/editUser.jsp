@@ -30,6 +30,9 @@
                 <li>
                     <a href="<s:url action="search"/>">Lista Utenti</a>
                 </li>
+                <li>
+                     <a href="menu.jsp">Torna al menu</a>
+                </li>
             </ul>
         </s:if>
         <hr>
